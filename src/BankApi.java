@@ -1,11 +1,11 @@
 interface BankApi {
     boolean verifyBank(int bankNumber);
 
+    double getBankBalance();
+
     void setBank();
 
-    void setBankBalance();
+    void setBankBalance(double num);
 
     String getBank();
-
-    float getBankBalance();
 }

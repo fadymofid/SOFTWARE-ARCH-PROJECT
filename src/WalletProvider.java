@@ -1,5 +1,9 @@
 public interface WalletProvider {
-    public void verify();
+    public boolean verify(int num);
     public void provide();
-    public void SetWalletBalance();
+    public void setwallet();
+
+    public void setwalletBalance(double balance);
+    public double getwalletBalance();
+    public String getwallet();
 }

@@ -1,14 +1,23 @@
 abstract class Account {
     AccountType accountType;
-    public Float balance;
+    public double balance;
     public int mobileNumber;
     Bills bills;
     Transactions transactions;
+    AccountServices accountServices;
+Account(){
+}
 
-    public void setAccountType() {
+
+
+         public AccountType getAccountType (){
+         return  accountType;
+         }
+    public double getbalance (){
+        return  balance;
     }
 
-    public abstract void balanceEnquire();
-
-    public abstract void mobilenumberVerification(Account account);
+    public AccountServices getAccountServices() {
+        return accountServices;
+    }
 }

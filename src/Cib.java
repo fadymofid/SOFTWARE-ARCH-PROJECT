@@ -4,10 +4,9 @@ import java.util.Scanner;
 class Cib implements BankApi {
     private List<Integer> validBankNumbers = new ArrayList<>();
     private String name;
-    private float balance;
+    private double balance; // Change the data type to double
 
     public Cib() {
-        // Populate the list of valid bank numbers
         validBankNumbers.add(123);
         validBankNumbers.add(456);
     }
@@ -23,8 +22,8 @@ class Cib implements BankApi {
     }
 
     @Override
-    public void setBankBalance() {
-        balance = 200;
+    public void setBankBalance(double balance) {
+        this.balance = balance;
     }
 
     @Override
@@ -33,7 +32,7 @@ class Cib implements BankApi {
     }
 
     @Override
-    public float getBankBalance() {
+    public double getBankBalance() {
         return balance;
     }
 }

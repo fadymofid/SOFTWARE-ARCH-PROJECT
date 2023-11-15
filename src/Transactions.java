@@ -1,3 +1,6 @@
+import java.util.List;
+
 public interface Transactions {
-    public void Transfer();
+    public abstract void Transfer(User user, List<User>users);
+
 }
