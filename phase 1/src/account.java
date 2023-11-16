@@ -1,28 +1,23 @@
-import java.util.Vector;
+abstract class Account {
+    AccountType accountType;
+    public double balance;
+    public int mobileNumber;
+    Bills bills;
+    Transactions transactions;
+    AccountServices accountServices;
+Account(){
+}
 
-/*
- */
-public class account {
 
-  public Enum accountType;
 
-  public float balance;
+         public AccountType getAccountType (){
+         return  accountType;
+         }
+    public double getbalance (){
+        return  balance;
+    }
 
-  public Integer mobilenumber;
-
-  public bills bill;
-
-  public transaction transaction;
-
-    public Vector  myuser;
-    public Vector  myuser;
-    public Vector  myuser;
-    public Vector  myuser;
-    public Vector  myuser;
-    public Vector  mybills services;
-    public Vector  mytransaction services;
-    public Vector  mybills;
-    public Vector  mytransaction;
-    public Vector  myaccount services;
-
+    public AccountServices getAccountServices() {
+        return accountServices;
+    }
 }

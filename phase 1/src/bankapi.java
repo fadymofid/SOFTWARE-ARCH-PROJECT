@@ -1,9 +1,11 @@
-import java.util.Vector;
+interface BankApi {
+    boolean verifyBank(int bankNumber);
 
-public interface bankapi {
+    double getBankBalance();
 
-    public Vector  mybankacc;
+    void setBank();
 
-  public void setbank();
+    void setBankBalance(double num);
 
+    String getBank();
 }

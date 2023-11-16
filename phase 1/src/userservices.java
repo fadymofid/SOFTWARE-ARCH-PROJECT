@@ -1,15 +1,13 @@
-import java.util.Vector;
+import java.util.List;
 
-public interface userservices {
+public interface UserServices {
 
-    public Vector  myuser;
+        public User verifyUser(User user, List<User> users);
+    public User register(List<User> users);
 
-  public user register();
 
-  public void verfiyuser();
+    public User login(List<User> users);
 
-  public user login();
 
-  public void logout();
-
+    public void logout();
 }

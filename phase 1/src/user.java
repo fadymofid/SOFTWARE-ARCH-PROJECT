@@ -1,18 +1,40 @@
-import java.util.Vector;
+    import java.util.ArrayList;
+    import java.util.List;
+    import java.util.Scanner;
+    public class User {
+        public String username;
+        public String password;
+        Account account;
+        public User(){}
 
-public class user {
+        public User(String username, String password, Account account) {
+            this.username = username;
+            this.password = password;
+            this.account = account;
+        }
+        public User(String username, String password) {
+            this.username = username;
+            this.password = password;
 
-  public string username;
+        }
 
-  public string password;
+        public Account getAccount() {
+            return account;
+        }
 
-  public account account;
+        public String getUsername() {
+            return username;
+        }
 
-    public Vector  myaccount;
-    public Vector  myaccount;
-    public Vector  myaccount;
-    public Vector  myaccount;
-    public Vector  myaccount;
-    public Vector  myuserservices;
+        public void setUsername(String username) {
+            this.username = username;
+        }
 
-}
+        public void setPassword(String password) {
+            this.password = password;
+        }
+
+        public String getPassword() {
+            return password;
+        }
+    }

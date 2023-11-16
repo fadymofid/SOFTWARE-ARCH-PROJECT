@@ -1,10 +1,8 @@
-import java.util.Vector;
+public class Bills
+{
+    public double amount;
 
-public class bills {
-
-  public float amount;
-
-    public Vector  myaccount;
-    public Vector  mybills services;
-
+    public double getAmount() {
+        return amount;
+    }
 }
